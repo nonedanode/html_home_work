@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="COI-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-style: italic
+        }
+
+        .name {
+            font-style: italic;
+            background: #eea35d;
+        }
+
+        .styles {
+            transition: all 0.3s;
+            background: #00ff00;
+        }
+
+        .bordered {
+            border: 1px dashed black;
+            display: inline-block;
+            /* это мы уже знаем, просто чтобы прилагательные были как блоки */
+            margin: 2px;
+            /* отступы со всех сторон */
+            padding: 8px 8px;
+            /* отступы внутри границы */
+            border-radius: 8px;
+            /* закруглим границы */
+            border-width: 3px;
+            /* плотность границы */
+            box-shadow: 0 0 8px grey;
+            /* добавим тень, 0 0 это ее сдвиг относительно блока, 8px радиус тени ну и цает */
+        }
+
+        .pharagraph1 {
+            text-align: center;
+            background: rgb(231, 243, 118)
+        }
+
+        .pharagraph2 {
+            text-align: right;
+            width: 500px;
+            background: linear-gradient(90deg, #80d7ff, #fdbaf4)
+        }
+
+        .pharagraph3 {
+            text-align: left;
+            width: 250px;
+            background: rgb(145, 248, 176)
+        }
+
+        .pharagraph1 .styles {
+            background: rgb(255, 255, 255);
+        }
+
+        .pharagraph1:hover .styles {
+            background: rgb(241, 6, 6);
+        }
+        .pharagraph1 .styles:hover {
+            background: rgb(140, 165, 247);
+        }
+        .styles:hover {
+            background: rgb(83, 100, 255);
+            cursor: pointer;
+            border-width: 4px;
+            /* меняю ширину границы, да можно только ширину указать */
+            padding: 16px;
+            /* меняю отступы от границы */
+            box-shadow: 0 0 30px white;
+            /* делаю тень белой и побольше, получается иллюзия свечения */
+        }
+
+        .styles:hover .bordered {
+            background: rgb(255, 244, 83);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="color: #f38123; text-align: center;">ВЕСНА!?</h1>
+    <div class="pharagraph1 bordered"><span class="name" style="border: 1px dashed black;">Весна</span> - <span
+            class="styles bordered">прекрасное</span> время года. Весной разбухают почки, становится <span
+            style="text-decoration: line-through;">теплее</span> после холодных зим, расцветают всеми <span
+            class="styles bordered">любимые</span> цветы подснежники. У всех растений начинается жизнь.</div><br>
+    <div class="pharagraph2 bordered">Журчат ручьи, по крышам домов капает капель. <span class="name"
+            style="border: 1px dashed black;">Солнце</span> светит всё ярче и ярче.<br> Тает снег, травка зеленеет,
+        птички прилетают с югов.<br> Весна бывает <span class="styles bordered">теплая</span>, бывает <span
+            class="styles bordered">холодная</span>.</div><br>
+    <div class="pharagraph3 bordered">Я надеюсь, что нынешняя весна будет <span class="styles bordered">тёплой</span> и
+        <span class="styles bordered">солнечной</span>. <br><span class="name"
+            style="border: 1px dashed black">Природа</span> оживает в это <span
+            class="styles bordered">замечательное</span> время года. <br>А после весны настаёт лето. &#128170
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<style>
+    .block {
+        border: 1px solid black;
+        /* явно указал высоту блока в единице измерения rem, которая равна стандартной высоте одной строки */
+        margin-bottom: 0.5rem;
+        /* отступ снизу */
+        margin: 0.25rem;
+        /* оступы вокруг блоков */
+        padding: 0.5rem;
+        /* отступы внутри блоков */
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .row {
+        display: flex;
+    }
+    .fish {
+        background-color: aqua;
+    }
+    .tree {
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <div class="row">
+        <div class="block fa-3x">
+            <i class="fa-solid fa-microchip"></i>
+        </div>
+        <div class="block fa-3x" style="flex-grow: 2;">
+            <i class="fa-solid fa-sitemap"></i>
+        </div>
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-window-restore"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="block fa-3x">
+            <i class="fa-solid fa-notdef"></i>
+        </div>
+        <div class="block fa-3x" style="flex-grow: 3; text-align: center;">
+            <i class="fa-solid fa-qrcode"></i>
+            <i class="fa-solid fa-qrcode"></i>
+            Qарcoды
+        </div>
+    </div>
+    <div class="row">
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: auto;">
+            тут собачка живет
+            <i class="fa-solid fa-dog"></i>
+        </div>
+        <div class="block fa-3x" style="text-align: center;">
+            <i class="fa-solid fa-cat"></i>
+            <i class="fa-solid fa-cat"></i>
+            <i class="fa-solid fa-cat"></i>
+        </div>
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-kiwi-bird"></i>
+            дом киви
+        </div>
+    </div>
+    <div class="row">
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-crow"></i>
+            ворона
+        </div>
+        <div class="block fa-3x" style="text-align: center;">
+            <i class="fa-solid fa-dog"></i>
+            <i class="fa-solid fa-dog"></i>
+        </div>
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-dove"></i>
+            голубь
+        </div>
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: 500px;">
+            <i class="fa-solid fa-horse"></i>
+            лошадка
+        </div>
+    </div>
+    <div class="row">
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-frog"></i>
+        </div>
+        <div class="block fa-3x fish" style="text-align: center;">
+            <i class="fa-solid fa-fish"></i>
+        </div>
+        <div class="block fa-3x fish" style="text-align: center;">
+            <i class="fa-solid fa-fish"></i>
+        </div>
+        <div class="block fa-3x fish" style="text-align: center;">
+            <i class="fa-solid fa-fish"></i>
+        </div>
+        <div class="block fa-3x" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-frog"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="block fa-3x tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree"></i>
+        </div>
+        <div class="block fa-3x tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree"></i>
+        </div>
+        <div class="block fa-3x tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree"></i>
+        </div>
+        <div class="block fa-3x tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-tree"></i>
+        </div>
+        <div class="block fa-3x" style="text-align: center;">
+            <i class="fa-solid fa-crow"></i>
+        </div>
+    </div>
+</body>
+
+</html>

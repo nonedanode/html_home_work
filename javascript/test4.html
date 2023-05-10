@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <input id="textField" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick7(this)">7</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick8(this)">8</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick9(this)">9</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick11(this)">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick4(this)">4</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick5(this)">5</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick6(this)">6</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick22(this)">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick1(this)">1</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick2(this)">2</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick3(this)">3</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick33(this)">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick0(this)">0</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick00(this)">=</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick44(this)">Стереть все</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function onButtonClick1(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 1
+        } 
+        function onButtonClick2(btn) {
+            let textField = document.getElementById("textField"); 
+            textField.value = textField.value + 2
+        } 
+        function onButtonClick3(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 3
+        } 
+        function onButtonClick4(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 4
+        } 
+        function onButtonClick5(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 5
+        } 
+        function onButtonClick6(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 6
+        }
+        function onButtonClick7(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 7
+        }
+        function onButtonClick8(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 8
+        }
+        function onButtonClick9(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 9
+        }
+        function onButtonClick0(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + 0
+        }
+        function onButtonClick11(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + "*"
+        }
+        function onButtonClick22(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + "/"
+        }
+        function onButtonClick33(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + "+"
+        }
+        function onButtonClick44(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = ""
+        }
+        function onButtonClick00(btn) {
+            let textField = document.getElementById("textField");
+            let code = textField.value;
+            textField.value = eval(code);
+        }
+    </script>
+    <style>
+        [class^=col] {
+            padding-top: .40rem;
+            padding-bottom: .40rem;
+            background-color: rgba(172, 120, 252, 0.15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+</body>
+
+</html>
