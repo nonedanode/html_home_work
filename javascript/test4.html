@@ -19,49 +19,49 @@
         </div>
         <div class="row">
             <div class="col d-flex justify-content-start">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick7(this)">7</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">7</button>
             </div>
             <div class="col d-flex justify-content-center">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick8(this)">8</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">8</button>
             </div>
             <div class="col d-flex justify-content-center">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick9(this)">9</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">9</button>
             </div>
             <div class="col d-flex justify-content-end">
-                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick11(this)">*</button>
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClickAny(this)">*</button>
             </div>
         </div>
         <div class="row">
             <div class="col d-flex justify-content-start">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick4(this)">4</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">4</button>
             </div>
             <div class="col d-flex justify-content-center">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick5(this)">5</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">5</button>
             </div>
             <div class="col d-flex justify-content-center">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick6(this)">6</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">6</button>
             </div>
             <div class="col d-flex justify-content-end">
-                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick22(this)">/</button>
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClickAny(this)">/</button>
             </div>
         </div>
         <div class="row">
             <div class="col d-flex justify-content-start">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick1(this)">1</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">1</button>
             </div>
             <div class="col d-flex justify-content-center">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick2(this)">2</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">2</button>
             </div>
             <div class="col d-flex justify-content-center">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick3(this)">3</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">3</button>
             </div>
             <div class="col d-flex justify-content-end">
-                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick33(this)">+</button>
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClickAny(this)">+</button>
             </div>
         </div>
         <div class="row">
             <div class="col-9 d-flex justify-content-end">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick0(this)">0</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">0</button>
             </div>
             <div class="col">
                 <button class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick00(this)">=</button>
@@ -69,67 +69,15 @@
         </div>
         <div class="row">
             <div class="col d-flex justify-content-end">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClick44(this)">Стереть все</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">Стереть все</button>
             </div>
         </div>
     </div>
     <script>
-        function onButtonClick1(btn) {
+        function onButtonClickAny(btn) {
             let textField = document.getElementById("textField");
-            textField.value = textField.value + 1
+            textField.value = textField.value + btn.innerText
         } 
-        function onButtonClick2(btn) {
-            let textField = document.getElementById("textField"); 
-            textField.value = textField.value + 2
-        } 
-        function onButtonClick3(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 3
-        } 
-        function onButtonClick4(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 4
-        } 
-        function onButtonClick5(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 5
-        } 
-        function onButtonClick6(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 6
-        }
-        function onButtonClick7(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 7
-        }
-        function onButtonClick8(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 8
-        }
-        function onButtonClick9(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 9
-        }
-        function onButtonClick0(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + 0
-        }
-        function onButtonClick11(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + "*"
-        }
-        function onButtonClick22(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + "/"
-        }
-        function onButtonClick33(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = textField.value + "+"
-        }
-        function onButtonClick44(btn) {
-            let textField = document.getElementById("textField");
-            textField.value = ""
-        }
         function onButtonClick00(btn) {
             let textField = document.getElementById("textField");
             let code = textField.value;
