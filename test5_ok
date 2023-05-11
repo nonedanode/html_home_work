@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <input id="textField" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">7</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">8</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">9</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClickAny(this)">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">4</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">5</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">6</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClickAny(this)">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">1</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">2</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">3</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClickAny(this)">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">0</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick00(this)">=</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">Стереть все</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function onButtonClickAny(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + btn.innerText
+        } 
+        function onButtonClick00(btn) {
+            let textField = document.getElementById("textField");
+            let code = textField.value;
+            textField.value = eval(code);
+        }
+    </script>
+    <style>
+        [class^=col] {
+            padding-top: .40rem;
+            padding-bottom: .40rem;
+            background-color: rgba(172, 120, 252, 0.15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+</body>
+
+</html>
