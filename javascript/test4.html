@@ -64,12 +64,12 @@
                 <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">0</button>
             </div>
             <div class="col">
-                <button class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClick00(this)">=</button>
+                <button class="btn btn-primary w-100 bg-warning text-dark border" onclick="onButtonClickSolve(this)">=</button>
             </div>
         </div>
         <div class="row">
             <div class="col d-flex justify-content-end">
-                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">Стереть все</button>
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickDelete(this)">Стереть все</button>
             </div>
         </div>
     </div>
@@ -78,10 +78,15 @@
             let textField = document.getElementById("textField");
             textField.value = textField.value + btn.innerText
         } 
-        function onButtonClick00(btn) {
+        function onButtonClickSolve(btn) {
             let textField = document.getElementById("textField");
             let code = textField.value;
             textField.value = eval(code);
+        }
+        function onButtonClickDelete(btn) {
+            let textField = document.getElementById("textField");
+            let code = textField.value;
+            textField.value = "";
         }
     </script>
     <style>
